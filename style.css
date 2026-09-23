@@ -1,16 +1,97 @@
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: #06702d;
+
+
+/* mettres plusieurs breakpoint selon taille des écrans. 300 est le minimum */
+
+body{
+    background-image: url("images/FondPageWeb2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.navbar button {
-    padding: 10px 20px;
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #06702d8f;
+    gap: 20px;
+    border-radius: 3rem;
+}
+
+.navbutton {
+    display: flex;
+    padding: 20px 20px;
     border: none;
     background-color: #ddd;
-    font-size: 1rem
+    font-size: 1rem;
+    max-width: 6em;
+    max-height: 6em;
+    background-color: transparent;
+    display: flex;
 }
+
+.burger{
+    display: none;
+    align-self: left;
+    max-width: 6em;
+    max-height: 6em;
+    background-color: transparent;
+    border: none;
+}
+
+
+/* Section fond des cases */
+
+
+.Botanicula{
+    background-image: url("images/Botanicula.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem;
+}
+
+
+.Creaks{
+    background-image: url("images/Creaks.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.Samorost{
+    background-image: url("images/Samorost.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Pilgrims{
+    background-image: url("images/Pilgrims.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.HappyGame{
+    background-image: url("images/HappyGame.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Machinarium{
+    background-image: url("images/Machinarium.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
 
 .navbar button:hover {
     background-color: #ccc;
@@ -20,30 +101,88 @@
 /* pas de point pour désigner classe préconstruite. */
 h1 {
     text-align: center;
-    color: #06702d;
-    font-size: 4em;
+    color: #c4e700;
+    font-size: 7em;
+   font-family: 'spinstee', Courier, monospace;
 }
 
 .game {
     display: flex;
-    border: 1px solid #ccc;
+    border: 4px solid #004e00;
     padding: 10px;
     margin: 10px;
     background-color: #6a5e5e;
-    border-radius: 5px;
-    height: 10rem;
-    width: 10rem;
+    border-radius: 20px;
+    height: 20rem;
+    width: 20rem;
 }
+
+
+
+
+
 .content {
     display: flex;
     margin-top: 20px;
     justify-content: center;
-    min-width: 40%;
+    min-width: 60%;
+    flex-wrap: wrap;
 
 }
 
-media query (min-width: 300px) {
-    .game {
+
+
+@media  (max-width: 300px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+    h1 {
+        font-size: 2em;
+    }
+    
+    .navbutton {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar {
+        justify-content: end;
+    }
+}
+
+
+
+
+
+
+@media  (max-width: 422px) {
+
+.navbutton{
+    max-width: 4.5em;
+    max-height:4.5
+    em;
+
+}
+}
+
+
+/* vw = viewport width */
+@media  (max-width: 600px){
+   .content{
+        flex-direction: column;
+        align-items: center;
+            }
+
+    .game { width: 80vw;
         
     }
 }
+
+
+
