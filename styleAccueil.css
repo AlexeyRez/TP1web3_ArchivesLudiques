@@ -1,42 +1,52 @@
 
 
-/* mettres plusieurs breakpoint selon taille des écrans. 300 est le minimum */
-
 body{
-    background-image: url("images/FondPageWeb2.webp");
+    background-image: url("images/Fond.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    width: 100%;
+    margin: 0px;
     background-color: #06702d8f;
     gap: 20px;
     border-radius: 3rem;
+    position: fixed;
+    /* left 0 enleve le trou minuscule d'un coté de la navbar... */
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.navbutton {
-    display: flex;
+.navbutton{
+    display: block;
     padding: 20px 20px;
     border: none;
-    background-color: #ddd;
-    font-size: 1rem;
-    max-width: 6em;
-    max-height: 6em;
+    font-style: unset;
+    max-width: 6rem;
+    max-height: 6rem;
     background-color: transparent;
     display: flex;
+    transition: background-color 0.4s ease-in-out 
+    
 }
+
+
+
+
 
 .burger{
     display: none;
     align-self: left;
-    max-width: 6em;
-    max-height: 6em;
+    max-width: 5em;
+    max-height: 5em;
     background-color: transparent;
     border: none;
+    margin-right: 1em;
 }
 
 
@@ -90,11 +100,8 @@ body{
 
 
 
-
-
-
 .navbar button:hover {
-    background-color: #ccc;
+    background-color: #00ec66;
 }
 
 
@@ -103,7 +110,8 @@ h1 {
     text-align: center;
     color: #c4e700;
     font-size: 7em;
-   font-family: 'spinstee', Courier, monospace;
+    font-family: 'spinstee', Courier, monospace;
+    padding-top: 1em;
 }
 
 .game {
@@ -115,10 +123,10 @@ h1 {
     border-radius: 20px;
     height: 20rem;
     width: 20rem;
-}
+    transition: transform 0.3s ease-in-out;
 
-
-
+    }
+    
 
 
 .content {
@@ -127,33 +135,31 @@ h1 {
     justify-content: center;
     min-width: 60%;
     flex-wrap: wrap;
-
-}
-
-
-
-@media  (max-width: 300px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-        
-
-    }
-    h1 {
-        font-size: 2em;
-    }
     
-    .navbutton {
-        display: none;
     }
 
-    .burger {
-        display: flex;
-    }
 
-    .navbar {
-        justify-content: end;
-    }
+
+.game:hover {
+    transform: scale(1.1);
+}
+
+
+
+.MenuDeroulant{
+    background-color:#06702d;
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    list-style: none;
+    top: 9%;
+    left: 45%;
+    padding: 3%;
+    border-radius: 2em;
+    font-family: 'Avenue', serif, monospace;
+    color: #c4e700;
+    display: none;
+    transition: background-color 0.1s ease-in-out;
 }
 
 
@@ -161,16 +167,10 @@ h1 {
 
 
 
-@media  (max-width: 422px) {
 
-.navbutton{
-    max-width: 4.5em;
-    max-height:4.5
-    em;
 
-}
-}
-
+/* adaptations du site dependament de la largeur de l'écran en ordre décroissant */
+/* mettres plusieurs breakpoint selon taille des écrans. 300 est le minimum */
 
 /* vw = viewport width */
 @media  (max-width: 600px){
@@ -184,5 +184,51 @@ h1 {
     }
 }
 
+@media  (max-width: 512px){
+
+    h1{
+        font-size: 5rem;
+    }
+}
 
 
+
+@media  (max-width: 422px) {
+
+.navbutton{
+    max-width: 4.5em;
+    max-height:4.5;
+
+
+}
+}
+
+@media  (max-width: 300px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    .game { width: 60vw;
+            
+
+    }
+        
+
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    
+
+    .navbutton {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+       
+    }
+
+    .navbar {
+        justify-content: end;
+    }
+}

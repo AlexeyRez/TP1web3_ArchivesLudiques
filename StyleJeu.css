@@ -1,0 +1,255 @@
+body{
+    background-image: url("images/Fond.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.navbarJeu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    background-color: #06702d8f;
+    gap: 20px;
+    border-radius: 3rem;
+    
+    /* left 0 enleve le trou minuscule d'un coté de la navbar... */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+
+.navbutton {
+    display: flex;
+    padding: 20px 20px;
+    border: none;
+    background-color: #ddd;
+    font-size: unset;
+    max-width: 6em;
+    max-height: 6em;
+    background-color: transparent;
+    display: flex;
+    transition: background-color 0.4s ease-in-out 
+}
+
+/* une classe custom a été mise sur limage home parce que un button et une image en meme temps dans un 
+Href brise pour XY raison */
+.homeImage{
+    max-width: 4rem;
+    max-height: 4rem;
+    display: flex;
+    align-self: center;
+    margin: 0%;
+}
+
+
+.burger{
+    display: none;
+    max-width: 5em;
+    max-height: 5em;
+    background-color: transparent;
+    border: none;
+    margin-right: 1em;
+  
+    
+}
+
+
+.content {
+    display: flex;
+    align-content: center;
+    gap: 0.6em;
+    margin-top: 10em;
+    margin-bottom: 5em;
+    max-width: 60vw;
+}
+
+h1{
+   
+    color: #c4e700;
+    font-size: 5rem;
+    font-family: 'spinstee', Courier, monospace;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 1em;
+  
+
+}
+
+h2{
+   
+    color: #c4e700;
+    font-size: 3em;
+    font-family: 'spinstee', Courier, monospace;
+    margin-left: 2em;
+    margin-top: 0%;
+}
+
+.Description{
+    font-family: 'Avenue', serif, monospace;
+    color: #00ec66;
+    margin-left: 2em;
+    font-size: 1rem;
+}
+
+
+.ImageJeu{
+    border-radius: 2rem;
+    object-fit: cover;
+    border: 0.5em solid #06702d;
+    display: flex;
+    
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarJeu button:hover {
+    background-color: #00ec66;
+}
+
+
+.JeuBouton{
+    display: flex;
+    background-color: #06702d8d;
+    padding: 1rem;
+    font-family: 'Avenue', serif, monospace;
+    color: #c4e700;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    font-size: 2em;
+    justify-content: center;
+    transition: background-color,  0.4s ease-in-out, color  0.6s ease-in-out;
+    border-color: transparent;
+    
+}
+
+.JeuBouton:hover{
+    background-color: #00e72e;
+    color: #06702d;
+
+}
+
+
+/* élements de listes */
+.listetags{
+    display: inline-flex;
+    gap: 2rem;
+}
+.tags{
+    padding:1em;
+    background-color: #c4e700;
+    justify-content: center;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    font-family: 'Avenue', serif, monospace;
+    color: #06702d;
+}
+
+.MenuDeroulant{
+    background-color:#06702d;
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    list-style: none;
+    top: 10%;
+    left: 60%;
+    padding: 3%;
+    border-radius: 2em;
+    font-family: 'Avenue', serif, monospace;
+    color: #c4e700;
+    display: none;
+    transition: background-color 0.1s ease-in-out;
+}
+
+
+
+
+
+/* adaptations de la page envers tailles de l'ecran */
+
+@media (max-width:1130px){
+
+h1{
+    font-size:3rem ;
+    margin-left: 6rem;
+}
+
+h2{
+   font-size: 2rem;
+   margin-left: 6rem ;
+}
+
+}
+
+@media (max-width:1000px){
+    h1{margin-left:0.5rem; }
+
+
+
+    h2{margin-left: 0.5rem;}
+}
+
+
+
+
+@media (max-width:500px){
+
+    .content{
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 60vw;
+
+    }
+    
+    .ImageJeu{
+        max-width: 75vw;
+    }
+   
+    .Description{
+        text-align: center;
+        margin-left: auto;
+    }
+    
+    h1,h2{
+       text-align: center;
+    }
+
+
+    .navbutton {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navbarJeu {
+        justify-content: end;
+    }
+}
+
+
+
+@media (max-width:800px){
+
+    .ImageJeu{
+
+        max-width: 55vw;
+        
+    }
+
+}
+
+@media (max-width:300px){
+    .MenuDeroulant{
+        left: 40%;
+    }
+}
