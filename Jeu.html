@@ -8,10 +8,9 @@
 </head>
 <body>
 
-
+    <!-- barre de navigation -->
     <div class="navbarJeu">
-        <a href="Accueil.html"><button class="navbutton"><img class="homeImage" src="icones\property.png" alt="bibliothèque"></button></a>   
-        
+        <a href="index.html"><button class="navbutton"><img class="homeImage" src="icones\property.png" alt="bibliothèque"></button></a>   
         <button class="navbutton" ><img src="icones\Biblio.png" alt="bibliothèque"></button>
         <button class="navbutton" ><img src="icones\Param.png" alt="paramètres"></button>
         <button class="navbutton" ><img src="icones\cart.png" alt="catalogue"></button>
@@ -19,10 +18,10 @@
         <button class="navbutton burger"  id="BoutonMenu"><img src="icones\hamburger.png" alt="menu" ></button>
     
     
-        
+        <!-- menu déroulant du burger -->
         <div class="MenuDeroulant" id="menucaché">
             <li>
-                <ul>Accueil</ul>
+                <ul><a href="index.html">Accueil</a></ul>
                 <ul>Bibliothèque</ul> 
                 <ul>paramètres</ul> 
                 <ul>catalogue</ul>  
@@ -40,11 +39,13 @@
     <div class="content">
         <img class="ImageJeu" src="images\Machinarium.webp" alt="Machinarium" srcset="">
         <div class="texte">
+
+            <!-- texte -->
             <h1>Machinarium</h1>
             <h2>Amanita Design</h2>
             <p class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorum consequuntur eaque asperiores. Deleniti nesciunt ullam illo ipsa, nobis tenetur eaque explicabo rem! Iure amet explicabo similique repellendus voluptatem reiciendis.</p>
         
-
+            <!-- tags du jeu sur la page -->
             <div>
             <li class="listetags">
                 <ul class="tags">Puzzle</ul>
@@ -61,7 +62,7 @@
     </div>
 
 
-    <script src="scriptJeu.js"></script>
+    <script src="scripts/scriptJeu.js"></script>
     
 </body>
 </html>

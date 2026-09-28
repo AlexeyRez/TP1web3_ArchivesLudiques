@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchivesLudiquesTP1</title>
+    <link rel="stylesheet" href="styleAccueil.css">
+
+
+</head>
+<body>
+    <!-- ID, c'est pour le JS -->
+     <!-- barre de navigation -->
+    <div class="navbar">
+        <button class="navbutton" tabindex="1"><img src="icones\property.png" alt="accueil"> </button>
+        <button class="navbutton" tabindex="2" ><img src="icones\Biblio.png" alt="bibliothèque"></button>
+        <button class="navbutton" tabindex="3"><img src="icones\Param.png" alt="paramètres"></button>
+        <button class="navbutton" tabindex="4"><img src="icones\cart.png" alt="catalogue"></button>
+        <!-- 2 classes en mm temps -->
+        <button class="navbutton burger" id="BoutonMenu" tabindex="5"><img src="icones\hamburger.png" alt="menu" ></button>
+    
+
+        <!-- menu burger (caché par défaut) -->
+      <div class="MenuDeroulant" id="menucaché">
+        <li>
+           <ul><a href="index.html">Accueil</a></ul>
+           <ul>Bibliothèque</ul> 
+           <ul>paramètres</ul> 
+           <ul>catalogue</ul>  
+        </li>
+    </div>
+    
+    
+    </div>
+
+  
+
+
+<h1>Bibliotheque</h1>
+    <div class="content">
+    <!-- 2 classe en mm temps -->
+        <a href="Jeu.html" tabindex="6" ><div class="game Botanicula"></div></a>
+        <div class="game Machinarium"tabindex="7" ></div>
+        <div class="game Samorost" tabindex="8" ></div>
+        <div class="game Creaks" tabindex="9"></div>
+        <div class="game Pilgrims"tabindex="10" ></div>
+        <div class="game HappyGame" tabindex="11"></div>
+    </div>
+
+
+
+
+    <script src="scripts/scriptAccueil.js"></script>
+</body>
+</html>

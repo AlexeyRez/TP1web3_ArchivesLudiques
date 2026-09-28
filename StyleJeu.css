@@ -4,6 +4,7 @@ body{
     background-repeat: repeat-y;
 }
 
+/* barre de navigation pour la page jeu */
 .navbarJeu {
     display: flex;
     justify-content: center;
@@ -20,7 +21,7 @@ body{
     
 }
 
-
+/* boutons implementés dans la barre de navigation */
 .navbutton {
     display: flex;
     padding: 20px 20px;
@@ -44,7 +45,7 @@ Href brise pour XY raison */
     margin: 0%;
 }
 
-
+/* bouton pour le menu déroulant */
 .burger{
     display: none;
     max-width: 5em;
@@ -66,6 +67,7 @@ Href brise pour XY raison */
     max-width: 60vw;
 }
 
+/* titres */
 h1{
    
     color: #c4e700;
@@ -87,6 +89,7 @@ h2{
     margin-top: 0%;
 }
 
+/* texte */
 .Description{
     font-family: 'Avenue', serif, monospace;
     color: #00ec66;
@@ -94,7 +97,7 @@ h2{
     font-size: 1rem;
 }
 
-
+/* L'image. du Jeu... */
 .ImageJeu{
     border-radius: 2rem;
     object-fit: cover;
@@ -112,7 +115,7 @@ h2{
     background-color: #00ec66;
 }
 
-
+/* bouton en bas de la description */
 .JeuBouton{
     display: flex;
     background-color: #06702d8d;
@@ -149,7 +152,7 @@ h2{
     font-family: 'Avenue', serif, monospace;
     color: #06702d;
 }
-
+/* le menu deroulant */
 .MenuDeroulant{
     background-color:#06702d;
     z-index: 2;
@@ -167,6 +170,10 @@ h2{
 }
 
 
+a{
+    color: #e0ff19;
+    font-style: italic;
+}
 
 
 
@@ -243,10 +250,31 @@ h2{
     .ImageJeu{
 
         max-width: 55vw;
+        text-align: left;
         
     }
 
 }
+
+
+@media (max-width:600px){
+
+.Description{
+    font-size: 0.8rem;
+    margin:0%;
+}
+
+.ImageJeu{
+    max-width: 40vw;
+}
+
+.tags{
+    font-size: 0.8rem;
+
+}
+    
+} 
+
 
 @media (max-width:300px){
     .MenuDeroulant{

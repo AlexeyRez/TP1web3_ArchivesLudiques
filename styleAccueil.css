@@ -7,6 +7,7 @@ body{
     background-position: center;
 }
 
+/* barre de navigation */
 .navbar {
     display: flex;
     justify-content: center;
@@ -22,6 +23,7 @@ body{
     z-index: 1;
 }
 
+/* boutons placés dans la barre de navigation */
 .navbutton{
     display: block;
     padding: 20px 20px;
@@ -38,7 +40,7 @@ body{
 
 
 
-
+/* menu déroulant, caché */
 .burger{
     display: none;
     align-self: left;
@@ -114,6 +116,7 @@ h1 {
     padding-top: 1em;
 }
 
+/* cases pour chaque jeu */
 .game {
     display: flex;
     border: 4px solid #004e00;
@@ -145,7 +148,7 @@ h1 {
 }
 
 
-
+/*menu qui apparait quand on pese sur le burger */
 .MenuDeroulant{
     background-color:#06702d;
     z-index: 2;
@@ -163,14 +166,17 @@ h1 {
 }
 
 
-
+a{
+    color: #e0ff19;
+    font-style: italic;
+}
 
 
 
 
 
 /* adaptations du site dependament de la largeur de l'écran en ordre décroissant */
-/* mettres plusieurs breakpoint selon taille des écrans. 300 est le minimum */
+/* mettres plusieurs breakpoint selon taille des écrans. 300 est le minimum, 1280 est la base */
 
 /* vw = viewport width */
 @media  (max-width: 600px){
@@ -203,7 +209,7 @@ h1 {
 }
 }
 
-@media  (max-width: 300px) {
+@media  (max-width: 370px) {
     .content {
         flex-direction: column;
         align-items: center;
