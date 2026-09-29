@@ -1,7 +1,7 @@
 
 
 body{
-    background-image: url("images/Fond.png");
+    background-image: url("../images/Fond.png");
     background-size: cover;
     background-repeat: repeat-y;
     background-position: center;
@@ -56,7 +56,7 @@ body{
 
 
 .Botanicula{
-    background-image: url("images/Botanicula.webp");
+    background-image: url("../images/Botanicula.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -65,35 +65,35 @@ body{
 
 
 .Creaks{
-    background-image: url("images/Creaks.webp");
+    background-image: url("../images/Creaks.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
 }
 
 .Samorost{
-    background-image: url("images/Samorost.webp");
+    background-image: url("../images/Samorost.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Pilgrims{
-    background-image: url("images/Pilgrims.webp");
+    background-image: url("../images/Pilgrims.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .HappyGame{
-    background-image: url("images/HappyGame.webp");
+    background-image: url("../images/HappyGame.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .Machinarium{
-    background-image: url("images/Machinarium.webp");
+    background-image: url("../images/Machinarium.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
